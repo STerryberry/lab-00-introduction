@@ -2,55 +2,6 @@ package ca.uwo.eng.se2205b;
 
 import java.util.Iterator;
 
-/**
- * Problem #2: Finds prime numbers and checks if they are palindromes.
-
-public class PalindromicPrime implements Iterable<Integer>{
-
-    private int maxPrime;
-    private int p = 2;
-
-    public PalindromicPrime(int max) {
-       this.maxPrime = max;
-    }
-
-    public Iterator<Integer> iterator() {
-        Iterator<Integer> itr = new PrimeIterator(maxPrime);
-        return itr;
-    }
-
-    private static class PrimeIterator implements Iterator<Integer> {
-        @Override
-        public boolean hasNext() {
-            if (p < maxPrime) {
-                return false;
-            } else {
-                return true;
-            }
-        }
-
-        @Override
-        public Integer next() {
-            int prev = p;
-            p++;
-            while (!(isPrime(p) || !isPalindrome(p))){
-                p++;
-            }
-            return prev;
-        }
-
-        @Override
-        public void remove() {
-
-            throw new UnsupportedOperationException("");
-        }
-
-        public static Iterator<Integer> palindromeIterator() {
-
-            return null;
-        }
-    }*/
-
     /**
      * Creates an iterator that returns prime palindrome numbers.
      *
