@@ -58,7 +58,8 @@ public class PalindromicPrime implements Iterable<Integer>{
      */
 
 public class PalindromicPrime implements Iterable<Integer> {
-        private int max;
+    private int counter = 0;
+    private int max;
 
         public PalindromicPrime(int max) {
             this.max = max;
@@ -82,9 +83,11 @@ public class PalindromicPrime implements Iterable<Integer> {
                 while (true) {
                     p++;
                     if (p <= 3) {
+                        counter ++;
                         return p;
                     }
                     if (isPrime(p) == true && isPalindrome(p) == true){
+                        counter ++;
                         return p;
                     }
                 }
@@ -96,7 +99,7 @@ public class PalindromicPrime implements Iterable<Integer> {
             }
             @Override
             public boolean hasNext() {
-                if (p < max){
+                if (counter < max){
                     return true;
                 }
                 else{
@@ -112,7 +115,7 @@ public class PalindromicPrime implements Iterable<Integer> {
         }
 
         public static void main(String[] args) {
-            Iterable<Integer> primes = new PalindromicPrime(94049);
+            Iterable<Integer> primes = new PalindromicPrime(100);
             Iterator<Integer> primeIter = primes.iterator();
             while (primeIter.hasNext()) {
                 int i = 0;

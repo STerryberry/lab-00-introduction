@@ -2,7 +2,7 @@
 
 See lab document: https://uwoece-se2205b-2017.github.io/labs/00-java-introduction
 
-Fizzbuzz:  
+###Fizzbuzz:  
 1  
 2  
 3 Fizz  
@@ -104,7 +104,7 @@ Fizzbuzz:
 99 Fizz  
 100 Buzz 
 
-Palindromic Prime:
+###Palindromic Prime:
 2	3	5	7	11	101	131	151	181	191	  
 313	353	373	383	727	757	787	797	919	929	  
 10301	10501	10601	11311	11411	12421	12721	12821	13331	13831	  
@@ -116,12 +116,12 @@ Palindromic Prime:
 74047	74747	75557	76367	76667	77377	77477	77977	78487	78787	  
 78887	79397	79697	79997	90709	91019	93139	93239	93739	94049
 
-Credit Card Validation:  
-Driver 1:  
+###Credit Card Validation:  
+####Driver 1:  
 Input your credit card number:   
 4388576018410707  
 The number is valid, and the card type is a Visa card.  
-Driver 2:  
+####Driver 2:  
 The number is invalid.  
 The number is invalid.  
 The number is invalid.  
